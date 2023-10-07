@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Stop Watch</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="lap">Lap</string>
+    <string name="stop_watch">Stop Watch</string>
 </resources>
