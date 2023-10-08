@@ -1,8 +1,7 @@
 package com.example.stopwatch.ui.theme
 
 import androidx.compose.ui.graphics.Color
-
-val md_theme_light_primary = Color(0xFFFB0100)
+val md_theme_light_primary = Color(0xFFE93548)
 val md_theme_light_onPrimary = Color(0xFFffffff)
 val md_theme_light_primaryContainer = Color(0xFFffdad4)
 val md_theme_light_onPrimaryContainer = Color(0xFF410000)
@@ -31,8 +30,10 @@ val md_theme_light_inversePrimary = Color(0xFFFFB0C9)
 val md_theme_light_surfaceTint = Color(0xFF984062)
 val md_theme_light_outlineVariant = Color(0xFFD5C2C6)
 val md_theme_light_scrim = Color(0xFF000000)
+val lap_reset_light_button = Color(0xFFFAE0E3)
 
-val md_theme_dark_primary = Color(0xFFc00100)
+
+val md_theme_dark_primary = Color(0xFFE93548)
 val md_theme_dark_onPrimary = Color(0xFFFFFFFF)
 val md_theme_dark_primaryContainer = Color(0xFF930100)
 val md_theme_dark_onPrimaryContainer = Color(0xFFffdad4)
@@ -61,3 +62,4 @@ val md_theme_dark_inversePrimary = Color(0xFF984062)
 val md_theme_dark_surfaceTint = Color(0xFFFFB0C9)
 val md_theme_dark_outlineVariant = Color(0xFF514347)
 val md_theme_dark_scrim = Color(0xFF000000)
+val lap_reset_dark_button = Color(0xFF7E222C)
