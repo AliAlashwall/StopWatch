@@ -71,13 +71,55 @@ class StopWatchViewModel :ViewModel(){
     @SuppressLint("StateFlowValueCalledInComposition")
     @Composable
     fun handleMainButText() : String{
-        return if (_sWUiState.value.mainButtonClicked) stringResource(R.string.pause) else stringResource(R.string.start)
+
+        if (_sWUiState.value.mainButtonClicked){
+            _sWUiState.update {
+                it.copy(
+                   mainButtonText = stringResource(R.string.pause)
+                )
+            }
+        }
+        else {
+            _sWUiState.update {
+                it.copy(
+                    mainButtonText = stringResource(R.string.start)
+                )
+            }
+        }
+        if(_sWUiState.value.mainButtonText == "Pause" && !_sWUiState.value.isRunning) {
+            _sWUiState.update {
+                it.copy(
+                    mainButtonText = "Resume"
+                )
+            }
+        }
+        else {
+            _sWUiState.update {
+                it.copy(
+                    mainButtonText = _sWUiState.value.mainButtonText
+                )
+            }
+        }
+        return _sWUiState.value.mainButtonText
     }
 
     @SuppressLint("StateFlowValueCalledInComposition")
     @Composable
     fun handleSecButText() : String{
-        return if(_sWUiState.value.pauseClicked) stringResource(R.string.reset) else stringResource(R.string.lap)
+        if(_sWUiState.value.pauseClicked){
+            _sWUiState.update {
+                it.copy(
+                    secButtonText = stringResource(R.string.reset)
+                )
+            }
+        }  else {
+            _sWUiState.update {
+                it.copy(
+                   secButtonText = stringResource(R.string.lap)
+                )
+            }
+        }
+        return _sWUiState.value.secButtonText
     }
 
     fun LapResetButHandeling(){

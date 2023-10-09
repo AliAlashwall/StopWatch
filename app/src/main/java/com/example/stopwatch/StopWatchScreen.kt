@@ -1,7 +1,6 @@
 package com.example.stopwatch
 
 import android.annotation.SuppressLint
-import android.text.format.DateUtils.formatElapsedTime
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -58,7 +57,6 @@ fun StopWatchScreen(swViewModel : StopWatchViewModel = viewModel()) {
         secButtonText = swViewModel.handleSecButText(),
         inDark = isSystemInDarkTheme(),
         elapsedMillis = sWUiState.elapsedMillis,
-        isRunning = sWUiState.isRunning,
         lapClicked = sWUiState.lapClicked,
         startClicked =  sWUiState.startClicked,
         lapList = sWUiState.lapList,
@@ -73,7 +71,6 @@ fun StopWatchScreen(swViewModel : StopWatchViewModel = viewModel()) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun StopWatchLayout(
-    isRunning : Boolean,
     mainButtonText : String,
     secButtonText :String,
     inDark :Boolean,
@@ -144,7 +141,7 @@ fun StopWatchLayout(
                 shape = RoundedCornerShape(10.dp)
             ) {
                 Text(
-                    text = if(mainButtonText == "Pause" && !isRunning) "Resume" else mainButtonText,
+                    text = mainButtonText,
                     fontSize = 20.sp,
                 )
             }
@@ -173,7 +170,7 @@ fun StopWatchLayout(
 fun LapItems(lapList : List<Long>, countLap : Int){
     LazyColumn{
         items(lapList.sortedDescending()) {lapItem ->
-            val lapTime = formatElapsedTime(lapItem)
+            val lapTime = formatElapsedTimee(lapItem)
             val lapNum = String.format("%02d",(lapList.indexOf(lapItem) + 1))
 
             Row(
