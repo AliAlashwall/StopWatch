@@ -1,4 +1,4 @@
-# Stopwatch App <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/11e70a1d-80a1-4d3d-8195-209a7776b5c1" width="5" alt="stopwatch">
+# Stopwatch App ⏱
 
 This repository contains a simple stopwatch app implemented in Kotlin using Jetpack Compose.The application can adapt to different screen sizes. The stopwatch app provides basic functionality to start, stop, lap, and reset the timer.
 
@@ -10,9 +10,9 @@ This repository contains a simple stopwatch app implemented in Kotlin using Jetp
 - Reset the stopwatch: Tap on the "Reset" button to set the timer back to zero.
 
 ## Screenshot 📸
-  <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/e66bf600-39ab-42e3-b6fe-0678fdb889e5" width="200" alt="Screenshot 1">   
-  <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4bc7ce3b-b4c0-45e4-8566-ec8202df73fe" width="200" alt="Screenshot 2">  
-  <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4deb25b5-27d3-4319-87d7-b7ada6dd1029" width="200" alt="Screenshot 3">  
+        <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/e66bf600-39ab-42e3-b6fe-0678fdb889e5" width="200" alt="Screenshot 1">   
+        <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4bc7ce3b-b4c0-45e4-8566-ec8202df73fe" width="200" alt="Screenshot 2">  
+        <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4deb25b5-27d3-4319-87d7-b7ada6dd1029" width="200" alt="Screenshot 3">  
 
 
 ## Getting Started 🎌
