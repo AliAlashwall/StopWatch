@@ -1,22 +1,21 @@
-# Stopwatch App <img src="![9500440461685033601-128](https://github.com/AliAlashwall/StopWatch/assets/108752479/11e70a1d-80a1-4d3d-8195-209a7776b5c1)
-" width="50" alt="Screenshot 1">
+# Stopwatch App <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/11e70a1d-80a1-4d3d-8195-209a7776b5c1" width="5" alt="stopwatch">
 
 This repository contains a simple stopwatch app implemented in Kotlin using Jetpack Compose.The application can adapt to different screen sizes. The stopwatch app provides basic functionality to start, stop, lap, and reset the timer.
 
-## Features
+## Features 🌟
 
 - Start the stopwatch: Tap on the "Start" button to start the stopwatch. The timer will begin counting up from zero.
 - Stop the stopwatch: Tap on the "Pause" button to pause the stopwatch. The timer will stop counting.
 - Record lap times: Tap on the "Lap" button to record the current lap time. The recorded lap times will be displayed on the screen.
 - Reset the stopwatch: Tap on the "Reset" button to set the timer back to zero.
 
-## Screenshot
-<img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/e66bf600-39ab-42e3-b6fe-0678fdb889e5" width="200" alt="Screenshot 1">
-<img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4bc7ce3b-b4c0-45e4-8566-ec8202df73fe" width="200" alt="Screenshot 2">
-<img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4deb25b5-27d3-4319-87d7-b7ada6dd1029" width="200" alt="Screenshot 3">
+## Screenshot 📸
+  <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/e66bf600-39ab-42e3-b6fe-0678fdb889e5" width="200" alt="Screenshot 1">   
+  <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4bc7ce3b-b4c0-45e4-8566-ec8202df73fe" width="200" alt="Screenshot 2">  
+  <img src="https://github.com/AliAlashwall/StopWatch/assets/108752479/4deb25b5-27d3-4319-87d7-b7ada6dd1029" width="200" alt="Screenshot 3">  
 
 
-## Getting Started
+## Getting Started 🎌
 
 To get started with the stopwatch app, follow these steps:
 
