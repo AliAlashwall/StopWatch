@@ -3,7 +3,6 @@ package com.example.stopwatch
 import android.annotation.SuppressLint
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -40,12 +39,13 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.stopwatch.ui.theme.StopWatchTheme
 import com.example.stopwatch.ui.theme.lap_reset_dark_button
 import com.example.stopwatch.ui.theme.lap_reset_light_button
-import com.example.stopwatch.ui.theme.md_theme_dark_outline
 import com.example.stopwatch.ui.theme.md_theme_light_outline
 import java.util.concurrent.TimeUnit
 
@@ -106,7 +106,7 @@ fun StopWatchLayout(
                 .size(300.dp),
             shape = RoundedCornerShape(200.dp),
             border = BorderStroke( 4.dp,
-                if ( inDark ) md_theme_dark_outline else md_theme_light_outline
+                if ( inDark ) Color.DarkGray else md_theme_light_outline
             )
         ) {
             Column(
@@ -257,3 +257,21 @@ fun StopwatchAppBar(inDark: Boolean){
     )
 }
 
+@Preview(showSystemUi = true)
+@Composable
+fun StopWatchPreview() {
+    StopWatchTheme (darkTheme = false){
+        StopWatchLayout(
+            mainButtonText = "Pause",
+            secButtonText = "Lap",
+            inDark = false,
+            elapsedMillis = 1L,
+            lapClicked = false,
+            startClicked = true,
+            lapList = mutableListOf(),
+            countLap = 0,
+            onMainButClicked = { },
+            lapResetHandleClick = {},
+        )
+    }
+}
